@@ -14,7 +14,16 @@ const actions = {
     const item = prependSlash(route.params.pathMatch)
     console.log('FETCH: route :', item)
     try {
-      const host = ENV.isDisconnected ? ENV.disconnectedHost : ENV.sitecoreCDHost
+      let host
+      if (ENV.isDisconnected) {
+        host = ENV.disconnectedHost
+      } else if (process.server) {
+        host = ENV.SSRSitecoreCDHost
+      } else {
+        host = ENV.sitecoreCDHost
+      }
+
+      console.log('FETCHING HOST: ', host)
       const lang = 'en' // this.i18n.locale
 
       // todo: use layoutService.fetchLayoutData
