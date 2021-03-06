@@ -29,6 +29,10 @@ const actions = {
               url,
               method: data ? 'POST' : 'GET',
               data,
+              headers: {
+                'Access-Control-Allow-Origin': '*',
+                'Content-Type': 'application/json'
+              },
               withCredentials: true
             })
         }
