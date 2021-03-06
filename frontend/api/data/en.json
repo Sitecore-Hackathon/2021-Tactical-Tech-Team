@@ -40,7 +40,10 @@
             "params": {},
             "fields": {
               "title": {
-                "value": "this is data"
+                "value": "Tactical-Tech-Team"
+              },
+              "subtitle": {
+                "value": "Sitecore Hackathon 2021"
               }
             }
           }

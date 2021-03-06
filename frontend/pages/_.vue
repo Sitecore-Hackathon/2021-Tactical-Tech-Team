@@ -1,35 +1,14 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-
       <ScPlaceholder v-if="route" name="ttt-main" :rendering="route" />
 
-      <nuxt-link to="about">
-        Test link
+      <nuxt-link to="/" class="button--green">
+        Home page
       </nuxt-link>
-
-      <h1 class="title">
-        ttt-frontend
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <nuxt-link to="/about" class="button--grey">
+        About page
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -50,10 +29,6 @@ export default {
     ScPlaceholder: Placeholder
   },
 
-  computed: {
-    ...mapJssState(['context', 'route'])
-  },
-
   async fetch ({ app, route, error, store, req, redirect }) {
     if (!store.state.jss.isExperienceEditor) {
       await store.dispatch('jss/fetchRouteData', route)
@@ -63,6 +38,10 @@ export default {
     if ([404, 403, 500].includes(statusCode)) {
       error({ statusCode })
     }
+  },
+
+  computed: {
+    ...mapJssState(['context', 'route'])
   },
 
   created () {
@@ -83,35 +62,5 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>
