@@ -10,6 +10,8 @@
         <SitecoreAspNetVersion>16.0.0</SitecoreAspNetVersion>
     </PropertyGroup>
     <ItemGroup>
+        <PackageReference Update="Sitecore.JavaScriptServices.ViewEngine" Version="17.0.0" />
+        <PackageReference Update="Sitecore.JavaScriptServices.ViewEngine.Http" Version="17.0.0" />
         <PackageReference Update="Sitecore.Kernel" Version="$(PlatformVersion)" />
         <PackageReference Update="Sitecore.ContentSearch" Version="$(PlatformVersion)" />
         <PackageReference Update="Sitecore.ContentSearch.Linq" Version="$(PlatformVersion)" />
