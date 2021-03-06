@@ -89,7 +89,7 @@ services:
       - "traefik.http.routers.cm.middlewares=redirect-to-https"
 
   fe:
-    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xp0-dih:${VERSION:-latest}
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xp0-fe:${VERSION:-latest}
     build:
       context: ../frontend
       dockerfile: Dockerfile
