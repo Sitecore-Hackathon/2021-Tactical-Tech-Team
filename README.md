@@ -33,8 +33,6 @@ A local development headless installation of sitecore plus NuxtJS frontend exper
     - NuxtJS support for Sitecore solutions
     - Improved development flow for the backend and frontend teams by removing necessity of integrated mode.
 
-_You can alternately paste a [link here](#docs) to a document within this repo containing the description._
-
 ## Video link
 ⟹ Provide a video highlighing your Hackathon module submission and provide a link to the video. You can use any video hosting, file share or even upload the video to this repository. _Just remember to update the link below_
 
@@ -67,7 +65,3 @@ You could ovveride ee renderer for the different one by adding `?sc_httprenderen
 Open `http://fe.ttt.localhost` - one docker conatiner is used by both Experince Editor and FE in SSR and SPA mode.
 
 ![Hackathon Logo](docs/images/hackathon.png?raw=true "Hackathon Logo")
-
-## Comments
-If you'd like to make additional comments that is important for your module entry.
-
