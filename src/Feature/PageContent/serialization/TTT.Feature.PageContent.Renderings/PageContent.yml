@@ -1,0 +1,14 @@
+﻿---
+ID: "7b1384c8-f1dc-412d-add3-32c0de7f2969"
+Parent: "c8db4da7-2226-1257-d3a3-606a5832288f"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/TTT/Feature/PageContent
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210306T163747Z

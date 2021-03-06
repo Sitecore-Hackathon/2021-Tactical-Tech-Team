@@ -1,0 +1,18 @@
+﻿---
+ID: "d40b7308-c260-4c8d-8e7a-35cfaebff186"
+Parent: "e5aeaf44-45e8-4d8d-902f-91447532a57e"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Applications/WebEdit/Custom Experience Buttons/TTT/Feature/PageContent
+DB: core
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190620T143329Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
