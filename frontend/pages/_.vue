@@ -4,6 +4,11 @@
       <Logo />
 
       <ScPlaceholder v-if="route" name="ttt-main" :rendering="route" />
+
+      <nuxt-link to="about">
+        Test link
+      </nuxt-link>
+
       <h1 class="title">
         ttt-frontend
       </h1>
@@ -47,6 +52,17 @@ export default {
 
   computed: {
     ...mapJssState(['context', 'route'])
+  },
+
+  async fetch ({ app, route, error, store, req, redirect }) {
+    if (!store.state.jss.isExperienceEditor) {
+      await store.dispatch('jss/fetchRouteData', route)
+    }
+
+    const { statusCode } = store.state.jss
+    if ([404, 403, 500].includes(statusCode)) {
+      error({ statusCode })
+    }
   },
 
   created () {

@@ -31,7 +31,7 @@ export default function ({ store, route, req }) {
     store.commit('jss/setLayoutResponse', { sitecore: { route: routeData, context } })
 
     // middleware called on GET and POST, sitecore use POST to render EE
-    if (req.method === 'GET') { return resolve() }
+    if (!req || req?.method === 'GET') { return resolve() }
 
     // READ the body from POST
     let body = ''
