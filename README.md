@@ -3,26 +3,33 @@
 
 # Hackathon Submission Entry form
 
-> __Important__  
-> 
-> Copy and paste the content of this file into README.md or face automatic __disqualification__  
-> All headlines and subheadlines shall be retained if not noted otherwise.  
-> Fill in text in each section as instructed and then delete the existing text, including this blockquote.
-
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
-
 ## Team name
-⟹ Write the name of your Hackathon team here
+Tactical Tech Team
+
+## Project name
+**S** - Sitecore
+
+**H** - Headless
+
+**I** - Inconceivable
+
+**N** - Nuxt
+
+**E** - Experience
 
 ## Category
-⟹ Write the name of the selected category
+Best use of headless using JSS or .NET
 
 ## Description
-⟹ Write a clear description of your hackathon entry.  
-
-  - Module Purpose
+A local development headless installation of sitecore plus NuxtJS frontend experience together with fully separated frontend and backend systems:
+  - Module Purpose:
+    - Introduce NuxtJS to Sitecore headless solution
+    - Fully separate Sitecore backend and frontend solutions
+    - Containerize development(higher environments QA, UAT will be added in the future as well as K8s support) setup out of the box
+    - Separate server for EE rendering
   - What problem was solved (if any)
-    - How does this module solve it
+    - NuxtJS support for Sitecore solutions
+    - Improved development flow for the backend and frontend teams by removing necessity of integrated mode.
 
 _You can alternately paste a [link here](#docs) to a document within this repo containing the description._
 
@@ -34,14 +41,9 @@ _You can alternately paste a [link here](#docs) to a document within this repo c
 
 
 ## Pre-requisites and Dependencies
-
-⟹ Does your module rely on other Sitecore modules or frameworks?
-
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
-
-_Remove this subsection if your entry does not have any prerequisites other than Sitecore_
+- Visual Studio 2019
+- NodeJS v14.14
+- Docker
 
 ## Installation instructions
 ⟹ Write a short clear step-wise instruction on how to install your module.  
