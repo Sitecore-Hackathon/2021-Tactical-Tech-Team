@@ -1,0 +1,13 @@
+﻿---
+ID: "01bd4964-ae28-402d-9ee1-d5f1e32881b2"
+Parent: "59b41b5f-e22e-460b-941e-fb64fe8da8fc"
+Template: "a6868d65-d612-401f-a40a-cd5ba0857b81"
+Path: /sitecore/system/Settings/Services/API Keys/JSS
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Value: "20210306T212143:637506625035932747Z"
