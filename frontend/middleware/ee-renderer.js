@@ -8,27 +8,27 @@ const parseServerData = (data, viewBag) => {
     sitecore: parsedData && parsedData.sitecore
   }
 }
-const routeData = {
-  placeholders: {
-    'ttt-main': [
-      {
-        componentName: 'TitleMain',
-        fields: {
-          title: {
-            value: 'Page Title HELLOOO'
-          }
-        }
-      }
-    ]
-  }
-}
-const context = {
-  pageEditing: 'normal'
-}
+// const routeData = {
+//   placeholders: {
+//     'ttt-main': [
+//       {
+//         componentName: 'TitleMain',
+//         fields: {
+//           title: {
+//             value: 'Page Title HELLOOO'
+//           }
+//         }
+//       }
+//     ]
+//   }
+// }
+// const context = {
+//   pageEditing: 'normal'
+// }
 
 export default function ({ store, route, req }) {
   return new Promise((resolve, reject) => {
-    store.commit('jss/setLayoutResponse', { sitecore: { route: routeData, context } })
+    // store.commit('jss/setLayoutResponse', { sitecore: { route: routeData, context } })
 
     // middleware called on GET and POST, sitecore use POST to render EE
     if (!req || req?.method === 'GET') { return resolve() }
