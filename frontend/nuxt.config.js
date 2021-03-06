@@ -23,6 +23,12 @@ export default {
   plugins: [
   ],
 
+  router: {
+    middleware: ['ee-renderer']
+  },
+  // serverMiddleware: [
+  //   { path: '/server-middleware', handler: '~/server-middleware/jss.js' }
+  // ],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 

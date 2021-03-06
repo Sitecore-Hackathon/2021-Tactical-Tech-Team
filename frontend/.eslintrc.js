@@ -14,5 +14,8 @@ module.exports = {
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    'no-unused-vars': 0,
+    'no-console': 0
+  }
 }
