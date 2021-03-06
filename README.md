@@ -1,4 +1,6 @@
 ![Hackathon Logo](docs/images/hackathon.png?raw=true "Hackathon Logo")
+
+![Hackathon Logo](docs/images/ttt-logo-small.png "Hackathon Logo")
 # Sitecore Hackathon 2021
 
 # Hackathon Submission Entry form
