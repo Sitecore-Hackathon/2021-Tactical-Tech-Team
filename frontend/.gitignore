@@ -88,3 +88,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# component factory
+/sitecore/component-factory.js

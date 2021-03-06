@@ -1,3 +1,5 @@
+import { writeComponentFactory } from './sitecore/scripts/generate-component-factory'
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -54,5 +56,14 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  hooks: {
+    build: {
+      done () {
+        // fs.writeFileSync('sitecore/component-factory.js', 'as', { encoding: 'utf8' })
+        writeComponentFactory()
+      }
+    }
   }
 }
