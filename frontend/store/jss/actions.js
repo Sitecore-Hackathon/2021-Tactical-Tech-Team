@@ -33,7 +33,7 @@ const actions = {
                 'Access-Control-Allow-Origin': '*',
                 'Content-Type': 'application/json'
               },
-              withCredentials: true
+              withCredentials: false
             })
         }
       )
