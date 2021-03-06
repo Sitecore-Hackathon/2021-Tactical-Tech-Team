@@ -27,7 +27,7 @@ services:
     volumes:
       - ./traefik:C:/etc/traefik
     depends_on:
-      - cm
+      - cm.ttt.localhost
 
   mssql:
     image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xm1-mssql:${VERSION:-latest}
@@ -59,7 +59,7 @@ services:
     environment:
       SITECORE_LICENSE_LOCATION: c:\license\license.xml
 
-  cm:
+  cm.ttt.localhost:
     image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xm1-cm:${VERSION:-latest}
     build:
       context: ./build/cm

@@ -24,7 +24,7 @@ services:
     depends_on:
       id:
         condition: service_healthy
-      cm:
+      cm.ttt.localhost:
         condition: service_healthy
 
   redis:
@@ -91,7 +91,8 @@ services:
       - "traefik.http.routers.id-secure.rule=Host(`${ID_HOST}`)"
       - "traefik.http.routers.id-secure.tls=true"
 
-  cm:
+  # need to make a proper host name here to support both SSR and SPA
+  cm.ttt.localhost:
     isolation: ${ISOLATION}
     image: ${SITECORE_DOCKER_REGISTRY}sitecore-xm1-cm:${SITECORE_VERSION}
     depends_on:
@@ -137,7 +138,7 @@ services:
     image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xp0-fe:${VERSION:-latest}
     isolation: ${ISOLATION}
     depends_on:
-      cm:
+      cm.ttt.localhost:
         condition: service_healthy
     ports:
       - "80:3000"
