@@ -1,0 +1,14 @@
+﻿---
+ID: "4756f1fd-6b14-4b36-827c-d07fcc3ba2c1"
+Parent: "64f240ed-5865-44f3-b938-123c0151bc91"
+Template: "2977707b-59bc-4ed5-8bdf-c2943e45b39b"
+Path: "/sitecore/content/ttt-shine/Home/About/Data"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210306T210801Z

@@ -1,0 +1,41 @@
+﻿---
+ID: "287552f9-7baa-4e3b-8912-256a2f14e974"
+Parent: "ee39c769-ecc9-419f-b2b0-513228527373"
+Template: "ee39c769-ecc9-419f-b2b0-513228527373"
+Path: /sitecore/templates/TTT/Project/TTT/Home Page/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{5CDC2762-EB6A-481C-8478-C6F31F62738B}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{E87794E7-2D2E-40AB-A8D7-171D6C5C54E3}">
+        <r
+          id="{69237B5E-2310-4805-AAF8-86922EFDD058}"
+          ph="ttt-main"
+          uid="{47C10211-62AC-4ACB-B34E-019172AD3BE3}" />
+        <r
+          id="{9B5155B2-8959-45D7-9F0E-BF53968F1175}"
+          ph="ttt-second"
+          uid="{72ACC516-9DB5-4D23-B151-4899671BAB46}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210306T204411Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

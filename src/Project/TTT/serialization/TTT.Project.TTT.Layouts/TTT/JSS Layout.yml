@@ -1,0 +1,21 @@
+﻿---
+ID: "e87794e7-2d2e-40ab-a8d7-171d6c5c54e3"
+Parent: "8071a426-63b3-433d-8b8b-1731b7f4c289"
+Template: "35c61e90-47dd-43dd-83a8-d1c4d5119720"
+Path: /sitecore/layout/Layouts/TTT/Project/TTT/JSS Layout
+DB: master
+SharedFields:
+- ID: "80334869-86dc-4472-aa89-44cf1b2f6c9b"
+  Hint: Placeholders
+  Type: Treelist
+  Value: |
+    {820D56F4-25DF-42BD-8219-CA33FF48C592}
+    {6C5ED589-2500-4532-8360-7C82FE077567}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210306T111019Z

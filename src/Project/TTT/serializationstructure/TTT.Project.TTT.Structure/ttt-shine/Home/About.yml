@@ -1,0 +1,30 @@
+﻿---
+ID: "64f240ed-5865-44f3-b938-123c0151bc91"
+Parent: "d91ad7e8-f719-4019-bab3-2a812a07e8aa"
+Template: "5cdc2762-eb6a-481c-8478-c6f31f62738b"
+Path: "/sitecore/content/ttt-shine/Home/About"
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{35DDC3C6-EE7B-4A50-B773-4B0FD800D4C8}"
+          s:ccb="Clear on publish"
+          s:ds="{04141DD5-5368-4835-9AF9-483E23FB7A2B}"
+          s:par="" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210306T210534Z

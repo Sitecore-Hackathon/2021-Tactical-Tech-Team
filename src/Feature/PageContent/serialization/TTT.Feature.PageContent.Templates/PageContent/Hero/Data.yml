@@ -1,0 +1,14 @@
+﻿---
+ID: "d47f7c09-1a48-471f-b456-510de0b245af"
+Parent: "15c3dbc2-58a1-4278-a41c-24b0c4e64a97"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/TTT/Feature/PageContent/Hero/Data
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210306T204628Z

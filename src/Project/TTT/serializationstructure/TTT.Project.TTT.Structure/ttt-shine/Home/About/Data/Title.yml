@@ -1,0 +1,24 @@
+﻿---
+ID: "04141dd5-5368-4835-9af9-483e23fb7a2b"
+Parent: "4756f1fd-6b14-4b36-827c-d07fcc3ba2c1"
+Template: "15af7278-8937-4ae4-8d10-2ba224011f84"
+Path: "/sitecore/content/ttt-shine/Home/About/Data/Title"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210306T211109Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "87af87e8-7834-4369-8fd3-8f56c0c08c1b"
+      Hint: title
+      Value: This is about us page
+    - ID: "e2698fcf-56b8-4c4b-9356-d50d9571b323"
+      Hint: subtitle
+      Value: We are Vladimir Zaverugo, Andrii Shtadler & Viktar Slapik 

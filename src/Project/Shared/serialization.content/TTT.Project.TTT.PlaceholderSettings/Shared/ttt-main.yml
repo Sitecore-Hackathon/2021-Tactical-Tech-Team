@@ -1,20 +1,19 @@
 ﻿---
-ID: "6c5ed589-2500-4532-8360-7c82fe077567"
+ID: "820d56f4-25df-42bd-8219-ca33ff48c592"
 Parent: "e6029500-ac8f-41d7-902c-34bfcb4a9acd"
 Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
-Path: "/sitecore/layout/Placeholder Settings/TTT/Project/Shared/ttt-shine"
+Path: "/sitecore/layout/Placeholder Settings/TTT/Project/Shared/ttt-main"
 DB: master
 SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
-  Value: "ttt-shine-main"
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 200
+  Value: "ttt-main"
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
   Type: TreelistEx
-  Value:
+  Value: |
+    {69237B5E-2310-4805-AAF8-86922EFDD058}
+    {9B5155B2-8959-45D7-9F0E-BF53968F1175}
 Languages:
 - Language: en
   Versions:
@@ -22,8 +21,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190326T120009Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\Admin
+      Value: 20210306T160958Z

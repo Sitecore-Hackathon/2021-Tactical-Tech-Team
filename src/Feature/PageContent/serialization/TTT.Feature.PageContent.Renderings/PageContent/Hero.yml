@@ -1,0 +1,21 @@
+﻿---
+ID: "9b5155b2-8959-45d7-9f0e-bf53968f1175"
+Parent: "7b1384c8-f1dc-412d-add3-32c0de7f2969"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: /sitecore/layout/Renderings/TTT/Feature/PageContent/Hero
+DB: master
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: Hero
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: /sitecore/templates/TTT/Feature/PageContent/Hero
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210306T111347Z
