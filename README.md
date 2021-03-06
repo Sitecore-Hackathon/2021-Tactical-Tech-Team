@@ -38,7 +38,7 @@ A local development headless installation of sitecore plus NuxtJS frontend exper
   - Front end ![FE](docs/images/fe.png "FE")
   - Front end disconnected mode ![FE Disconnected Mode](docs/images/fe-disconnected-mode.png "FE Disconnected Mode")
 ## Video link
-⟹ Provide a video highlighing your Hackathon module submission and provide a link to the video. You can use any video hosting, file share or even upload the video to this repository. _Just remember to update the link below_
+⟹ Provide a video highlighting your Hackathon module submission and provide a link to the video. You can use any video hosting, file share or even upload the video to this repository. _Just remember to update the link below_
 
 ⟹ [Replace this Video link](#video-link)
 
@@ -48,15 +48,15 @@ A local development headless installation of sitecore plus NuxtJS frontend exper
 - Docker
 
 ## Installation instructions
-- `cd .\frontend`  
-- `npm install`
+> `cd .\frontend`  
+> `npm install`
  
-- Visual Studio Build Solution
-- `Environment Website` project -> right click -> Publish
-- check that folder `.\docker\deploy\platform\` is populated
-- Start docker environment using `.\Start-Hackathon.ps1`
-- after sitecore site has started, sync Unicorn via `https://cm.ttt.localhost/unicorn.aspx`
-- Once Sync is done, please do full publish
+> Visual Studio -> Build Solution
+> `Environment Website` project -> right click -> Publish
+> check that folder `.\docker\deploy\platform\` is populated
+> Start docker environment using `.\Start-Hackathon.ps1`
+> after sitecore site has started, sync Unicorn via `https://cm.ttt.localhost/unicorn.aspx`
+> Once Sync is done, please do full publish
 
 ### Configuration
 > If you want to run solution in the disconnected mode, please change `isDisconnected` to `true` in `.\frontend\env.js` file.
@@ -64,8 +64,8 @@ A local development headless installation of sitecore plus NuxtJS frontend exper
 
 ## Usage instructions
 Open Sitecore, find `ttt-shine` site and open `Home` in EE you should get usual content editing experience, but EE rendering was done on separate ee renderer server.
-You could ovveride ee renderer for the different one by adding `?sc_httprenderengineurl=https://feature-branch-name-ee.ttt.localhost`, it is handy when newer FE branch is deployed somewhere in the K8s and you want to test it against this new version of the FE site and EE renderer.
+You could override ee renderer for the different one by adding `?sc_httprenderengineurl=https://feature-branch-name-ee.ttt.localhost`, it is handy when newer FE branch is deployed somewhere in the K8s and you want to test it against this new version of the FE site and EE renderer.
 
-Open `http://fe.ttt.localhost` - one docker conatiner is used by both Experince Editor and FE in SSR and SPA mode.
+Open `http://fe.ttt.localhost` - one docker container is used by both Experience Editor and FE in SSR and SPA mode.
 
 ![Hackathon Logo](docs/images/hackathon.png?raw=true "Hackathon Logo")
