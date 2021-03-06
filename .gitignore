@@ -1,6 +1,9 @@
 # may contain OAuth secrets, do not commit
 .sitecore/user.json
 
+# development & idea folders, do not commit
+.idea
+
 # Ephemeral index caches used by serialization, do not commit
 .scindex
 
