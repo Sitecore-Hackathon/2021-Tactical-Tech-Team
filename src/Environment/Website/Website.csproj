@@ -23,8 +23,6 @@
     <NuGetPackageImportStamp />
     <TargetFrameworkProfile />
     <MvcBuildViews>true</MvcBuildViews>
-    <!--note: this path also used in post build events in this project-->
-    <IntermediateOutputPath>C:\Projects\sitecore-v2\bld</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -86,25 +84,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\Docker.pubxml" />
-    <None Include="Web.config" />
-    <None Include="Web.prod.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.uat.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
+    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.dev.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.qa.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">

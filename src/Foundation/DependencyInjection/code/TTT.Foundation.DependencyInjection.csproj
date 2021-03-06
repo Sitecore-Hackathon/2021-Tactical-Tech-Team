@@ -78,7 +78,7 @@
     <None Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Sitecore.Kernel"/>
+    <PackageReference Include="Sitecore.Kernel" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

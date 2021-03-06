@@ -10,13 +10,12 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
     <PropertyGroup>
-        <!-- 
-            Loads shared pubxml file -->
+        <!-- Loads shared pubxml file -->
         <CustomBeforeMicrosoftCommonTargets>$(MSBuildThisFileDirectory)Docker.pubxml</CustomBeforeMicrosoftCommonTargets>
 
         <!-- DeployOnBuild
             Automatically deploy (publish) projects on build. . -->
-        <DeployOnBuild>True</DeployOnBuild>
+        <!-- <DeployOnBuild>True</DeployOnBuild> -->
 
         <IsLocalDockerDeploy>True</IsLocalDockerDeploy>
 

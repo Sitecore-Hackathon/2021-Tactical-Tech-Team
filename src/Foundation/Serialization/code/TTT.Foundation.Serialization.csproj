@@ -43,9 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Unicorn"/>
-    <PackageReference Include="Unicorn.Roles"/>
-    <PackageReference Include="Unicorn.Users"/>
+    <PackageReference Include="Unicorn" />
+    <PackageReference Include="Unicorn.Roles" />
+    <PackageReference Include="Unicorn.Users" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
