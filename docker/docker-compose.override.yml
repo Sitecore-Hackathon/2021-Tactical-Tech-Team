@@ -76,6 +76,7 @@ services:
       - ${LOCAL_DEPLOY_PATH}\platform:C:\deploy
       - ${LOCAL_DATA_PATH}\cm:C:\inetpub\wwwroot\App_Data\logs
       - ${HOST_LICENSE_FOLDER}:c:\license
+      - ${LOCAL_SRC_PATH}:C:\src
     environment:
       SITECORE_LICENSE_LOCATION: c:\license\license.xml
       Sitecore_JSS_ImportUser: ${JSS_IMPORT_USER:-sitecore\admin}
