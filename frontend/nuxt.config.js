@@ -63,6 +63,9 @@ export default {
         // fs.writeFileSync('sitecore/component-factory.js', 'as', { encoding: 'utf8' })
         writeComponentFactory()
       }
+    },
+    ready() {
+      process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
     }
   }
 }
