@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <ItemGroup>
+    <!-- this file contains libs to be skipped from final output to reduce size of deployment artifact -->
+
+    <!-- Requires NuGet reference to Sitecore.Assemblies.Platform or another Assemblies package -->
+    <SitecoreAssembliesToExclude Include="@(SitecoreAssemblies)" />
+
+    <!-- Assembly lists -->
+
+    <!-- Or individual assemblies -->
+    <SitecoreAssembliesToExclude Include="GraphQL.dll" />
+    <SitecoreAssembliesToExclude Include="GraphQL-Parser.dll" />
+    <SitecoreAssembliesToExclude Include="Sitecore.Kernel.dll" />
+    <SitecoreAssembliesToExclude Include="Sitecore.JavaScriptServices.Configuration.dll" />
+    <SitecoreAssembliesToExclude Include="Sitecore.JavaScriptServices.Core.dll" />
+    <SitecoreAssembliesToExclude Include="Sitecore.JavaScriptServices.Globalization.dll" />
+    <SitecoreAssembliesToExclude Include="Sitecore.JavaScriptServices.ViewEngine.dll" />
+    <SitecoreAssembliesToExclude Include="Sitecore.LayoutService.dll" />
+    <SitecoreAssembliesToExclude Include="Sitecore.LayoutService.Mvc.dll" />
+    <SitecoreAssembliesToExclude Include="Sitecore.Services.GraphQL.Content.dll" />
+    <SitecoreAssembliesToExclude Include="Sitecore.Services.GraphQL.dll" />
+    <SitecoreAssembliesToExclude Include="Sitecore.Services.GraphQL.NetFxHost.dll" />
+    <SitecoreAssembliesToExclude Include="System.ComponentModel.Annotations.dll" />
+    <SitecoreAssembliesToExclude Include="System.Reactive.Core.dll" />
+    <SitecoreAssembliesToExclude Include="System.Reactive.Interfaces.dll" />
+    <SitecoreAssembliesToExclude Include="System.Reactive.Linq.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- individual assemblies can also be whitelisted (e.g. a patched version is included with the application) -->
+    <SitecoreAssembliesToInclude Include="Sitecore.Client.dll" />
+    <SitecoreAssembliesToInclude Include="Sitecore.Content.Services.dll" />
+    <SitecoreAssembliesToInclude Include="Sitecore.Kernel.dll" />
+    <SitecoreAssembliesToInclude Include="Sitecore.Services.Client.dll" />
+    <SitecoreAssembliesToInclude Include="Sitecore.Services.Core.dll" />
+    <SitecoreAssembliesToInclude Include="Sitecore.Services.Infrastructure.dll" />
+    <SitecoreAssembliesToInclude Include="Sitecore.Services.Infrastructure.Sitecore.dll" />
+
+    <!-- Sitecore Sidekick -->
+    <SitecoreAssembliesToInclude Include="ScsAuditLog.dll" />
+    <SitecoreAssembliesToInclude Include="ScsContentMigrator.dll" />
+    <SitecoreAssembliesToInclude Include="ScsEditingContext.dll" />
+    <SitecoreAssembliesToInclude Include="SitecoreSidekick.dll" />
+    
+  </ItemGroup>
+
+  <ItemGroup>
+    <HelixModuleMetadataPatterns Include="Convention">
+       <!--Now available as ^(HelixModule.Namespace), ^(HelixModule.Layer), and ^(HelixModule.Module)--> 
+      <Pattern>^(?'Namespace'.+)\.(?'Layer'.+?)\.(?'Module'.+)$</Pattern>
+       <SourceMetadataName>FileName</SourceMetadataName> 
+    </HelixModuleMetadataPatterns>
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFilesForPackagingFromHelixModules Include="Serialization">
+      <SourcePath>..\serialization\**\*.yml</SourcePath>
+      <TargetPath>App_Data\unicorn\^(HelixModule.Layer)\^(HelixModule.Module)\serialization\^(RecursiveDir)^(Filename)^(Extension)</TargetPath>
+    </AdditionalFilesForPackagingFromHelixModules>
+    <AdditionalFilesForPackagingFromHelixModules Include="SerializationKey">
+      <SourcePath>..\serializationkey\**\*.yml</SourcePath>
+      <TargetPath>App_Data\unicorn\^(HelixModule.Layer)\^(HelixModule.Module)\serializationkey\^(RecursiveDir)^(Filename)^(Extension)</TargetPath>
+    </AdditionalFilesForPackagingFromHelixModules>
+    <AdditionalFilesForPackagingFromHelixModules Include="SerializationContent">
+      <SourcePath>..\serialization.content\**\*.yml</SourcePath>
+      <TargetPath>App_Data\unicorn\^(HelixModule.Layer)\^(HelixModule.Module)\serialization.content\^(RecursiveDir)^(Filename)^(Extension)</TargetPath>
+    </AdditionalFilesForPackagingFromHelixModules>
+    <AdditionalFilesForPackagingFromHelixModules Include="SerializationStructure">
+      <SourcePath>..\serializationstructure\**\*.yml</SourcePath>
+      <TargetPath>App_Data\unicorn\^(HelixModule.Layer)\^(HelixModule.Module)\serializationstructure\^(RecursiveDir)^(Filename)^(Extension)</TargetPath>
+    </AdditionalFilesForPackagingFromHelixModules>
+    <AdditionalFilesForPackagingFromHelixModules Include="SerializationRoles">
+      <SourcePath>..\serializationroles\**\*.yml</SourcePath>
+      <TargetPath>App_Data\unicorn\^(HelixModule.Layer)\^(HelixModule.Module)\serializationroles\^(RecursiveDir)^(Filename)^(Extension)</TargetPath>
+    </AdditionalFilesForPackagingFromHelixModules>
+  </ItemGroup>
+
+</Project>

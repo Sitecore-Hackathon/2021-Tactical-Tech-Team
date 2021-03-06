@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!--
+    Auto-discovering modules:
+    Since Helix solutions tend to expand to a large number of modules, 
+    it may be preferable to reference them dynamically. 
+  -->
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\Foundation\*\code\*.csproj" />
+    <ProjectReference Include="..\..\Feature\*\code\*.csproj" />
+    <ProjectReference Include="..\..\Project\*\code\*.csproj" />
+  </ItemGroup>
+
+</Project>

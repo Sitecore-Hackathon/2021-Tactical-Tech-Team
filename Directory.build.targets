@@ -15,7 +15,7 @@ Directory.Build.targets
 <Project>
     <Sdk Name="Microsoft.Build.CentralPackageVersions" Version="2.0.79" />
 
-    <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+    <!-- <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" /> -->
 
     <Target Name="AutoWebPublish" AfterTargets="Build" Condition="'$(DeployOnBuild)'=='True' AND '$(UsingMicrosoftNETSdk)' != 'True'">
         <PropertyGroup>

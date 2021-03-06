@@ -1,0 +1,26 @@
+﻿---
+ID: "180b8a4e-6c0e-588d-a16a-0a76729fe294"
+Parent: "0de95ae4-41ab-4d01-9eb0-67441b7c2450"
+Template: "20dcbe1c-76b0-46f0-82fc-b4fa41383d12"
+Path: "/sitecore/content/ttt-shine"
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{8087A030-6D2A-5E2C-8DD5-6651DA095A9A}"
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value:
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190321T103034Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport

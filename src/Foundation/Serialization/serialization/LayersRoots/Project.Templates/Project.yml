@@ -1,0 +1,14 @@
+﻿---
+ID: "734b4c19-bf2b-57cd-0eba-be663578b3d7"
+Parent: "762b1013-466c-0095-48ca-fa6d1047ebb9"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/TTT/Project
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170501T175200Z
