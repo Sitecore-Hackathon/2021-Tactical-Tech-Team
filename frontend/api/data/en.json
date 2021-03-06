@@ -47,6 +47,27 @@
               }
             }
           }
+        ],
+        "ttt-second": [
+          {
+            "componentName": "Hero",
+            "fields": {
+              "title": {
+                "value": "Title"
+              },
+              "description": {
+                "value": "Lorem ipsum dolor"
+              },
+              "link": {
+                "value": {
+                  "href": "/about",
+                  "text": "About link",
+                  "linktype": "internal",
+                  "url": "/about"
+                }
+              }
+            }
+          }
         ]
       }
     }

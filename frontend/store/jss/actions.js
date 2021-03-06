@@ -39,7 +39,7 @@ const actions = {
       )
       commit('setLayoutResponse', data)
     } catch (error) {
-      commit('setLayoutError', 404)
+      // commit('setLayoutError', 404)
     }
   }
 }

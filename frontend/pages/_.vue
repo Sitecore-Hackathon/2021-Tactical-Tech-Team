@@ -1,14 +1,10 @@
 <template>
   <div class="container">
     <div>
+      <ScLogo /> <span class="plus">+</span> <Logo />
       <ScPlaceholder v-if="route" name="ttt-main" :rendering="route" />
-
-      <nuxt-link to="/" class="button--green">
-        Home page
-      </nuxt-link>
-      <nuxt-link to="/about" class="button--grey">
-        About page
-      </nuxt-link>
+      <Navigation />
+      <ScPlaceholder v-if="route" name="ttt-second" :rendering="route" />
     </div>
   </div>
 </template>
@@ -47,20 +43,15 @@ export default {
   created () {
     JssPlaceholderPlugin()
   },
-
   methods: {
     ...mapJssActions(['fetchRouteData'])
   }
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style scoped>
+.plus {
+  font-size: 48px;
+  color: #526488;
 }
 </style>
