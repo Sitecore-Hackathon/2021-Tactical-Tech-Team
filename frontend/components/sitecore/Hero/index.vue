@@ -35,6 +35,7 @@ export default {
   padding: 15px 20px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
+
 .title {
   color: #35495e;
   font-size: 28px;

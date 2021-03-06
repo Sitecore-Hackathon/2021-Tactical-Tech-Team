@@ -3,13 +3,14 @@
 </template>
 
 <script>
-import TitleMain from '~/components/sitecore/title-main'
-
 export default {
   name: 'NuxtOnly'
 }
 </script>
 
 <style scoped>
-
+h2 {
+  color: #35495e;
+  margin-top: 25px;
+}
 </style>
