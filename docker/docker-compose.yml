@@ -132,3 +132,16 @@ services:
       - "traefik.http.routers.cm-secure.rule=Host(`${CM_HOST}`)"
       - "traefik.http.routers.cm-secure.tls=true"
       - "traefik.http.routers.cm-secure.middlewares=force-STS-Header"
+
+  fe:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xp0-dih:${VERSION:-latest}
+    isolation: ${ISOLATION}
+    depends_on:
+      cm:
+        condition: service_healthy
+    ports:
+      - "80:3000"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.dih.entrypoints=websecure"
+      - "traefik.http.routers.dih.rule=Host(`${FE_HOST}`)"

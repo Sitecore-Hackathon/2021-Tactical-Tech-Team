@@ -87,3 +87,10 @@ services:
       - "traefik.http.routers.cm.entrypoints=web"
       - "traefik.http.routers.cm.rule=Host(`${CM_HOST}`)"
       - "traefik.http.routers.cm.middlewares=redirect-to-https"
+
+  fe:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xp0-dih:${VERSION:-latest}
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    entrypoint: powershell -Command "& cd C:\app; npm run start"
