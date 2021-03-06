@@ -1,5 +1,5 @@
 ﻿---
-ID: "989883f0-bcb7-4ce4-9979-289934a32467"
+ID: "8f80d75f-189b-4034-a655-917c739be803"
 Parent: "0aad2a6a-023c-45a1-808f-a2c0e491451c"
 Template: "85adbf5b-e836-4932-a333-fe0f9fa1ed1e"
 Path: /sitecore/templates/Branches/TTT/Project/TTT
@@ -11,8 +11,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190620T140735Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\Admin
+      Value: 20210306T164525Z
