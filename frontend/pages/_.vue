@@ -26,7 +26,9 @@ export default {
   },
 
   async fetch ({ app, route, error, store, req, redirect }) {
-    if (!store.state.jss.isExperienceEditor) {
+    console.log('FETCH: isEeRender', store.state.jss.eeRender)
+
+    if (!store.state.jss.eeRender) {
       await store.dispatch('jss/fetchRouteData', route)
     }
 

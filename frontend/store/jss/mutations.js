@@ -8,8 +8,10 @@ const mutations = {
    */
   setLayoutResponse (state, layout) {
     if (!layout) { return }
+    console.log('CONTEXT: ')
     const {
-      sitecore: { route, context = {} }
+      sitecore: { route, context = {} },
+      eeRender
     } = layout
 
     // Do not replace the original state object - the store and any components that use the store
@@ -17,6 +19,7 @@ const mutations = {
     state.statusCode = '200'
     state.route = route
     state.context = context
+    state.eeRender = eeRender
   },
 
   setLayoutError (state, statusCode) {

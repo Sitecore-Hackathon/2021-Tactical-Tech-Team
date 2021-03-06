@@ -11,8 +11,8 @@ function prependSlash (url) {
 
 const actions = {
   async fetchRouteData ({ commit }, route) {
-    console.log('FETCH', route.params.pathMatch)
     const item = prependSlash(route.params.pathMatch)
+    console.log('FETCH: route :', item)
     try {
       const host = ENV.isDisconnected ? ENV.disconnectedHost : ENV.sitecoreCDHost
       const lang = 'en' // this.i18n.locale
@@ -39,6 +39,7 @@ const actions = {
       )
       commit('setLayoutResponse', data)
     } catch (error) {
+      console.error(error)
       // commit('setLayoutError', 404)
     }
   }
