@@ -28,9 +28,9 @@ export default {
   router: {
     middleware: ['ee-renderer']
   },
-  // serverMiddleware: [
-  //   { path: '/server-middleware', handler: '~/server-middleware/jss.js' }
-  // ],
+  serverMiddleware: [
+    { path: '/api/ee', handler: '~/server-middleware/jss.js' }
+  ],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -43,9 +43,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxtjs/axios'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

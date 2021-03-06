@@ -2,6 +2,8 @@
   <div class="container">
     <div>
       <Logo />
+
+      <ScPlaceholder v-if="route" name="ttt-main" :rendering="route" />
       <h1 class="title">
         ttt-frontend
       </h1>
@@ -28,7 +30,33 @@
 </template>
 
 <script>
-export default {}
+import { Placeholder } from '@sitecore-jss/sitecore-jss-vue'
+import { createNamespacedHelpers } from 'vuex'
+import { JssPlaceholderPlugin } from '~/plugins/jss-placeholder'
+
+const {
+  mapGetters: mapJssGetters,
+  mapActions: mapJssActions,
+  mapState: mapJssState
+} = createNamespacedHelpers('jss')
+
+export default {
+  components: {
+    ScPlaceholder: Placeholder
+  },
+
+  computed: {
+    ...mapJssState(['context', 'route'])
+  },
+
+  created () {
+    JssPlaceholderPlugin()
+  },
+
+  methods: {
+    ...mapJssActions(['fetchRouteData'])
+  }
+}
 </script>
 
 <style>
