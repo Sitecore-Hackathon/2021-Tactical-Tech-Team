@@ -30,10 +30,10 @@ A local development headless installation of sitecore plus NuxtJS frontend exper
     - Containerize development(higher environments QA, UAT will be added in the future as well as K8s support) setup out of the box
     - Separate server for EE rendering
     - Ability to work in disconnected mode on FE side
-    - FE and BE could be split into two repositories to have full independence in the team, that was done as one repo due to hackaton limitation
+    - FE and BE could be split into two repositories to have full independence in the team, which was done as one repo due to hackathon limitation
   - What problem was solved (if any)
     - NuxtJS support for Sitecore solutions
-    - Improved development flow for the backend and frontend teams by removing necessity of integrated mode.
+    - Improved development flow for the backend and frontend teams by removing the necessity of integrated mode.
     - Use NUXT possibility to render the same page with GET (end-user) and POST (Experience Editor) requests. With this approach, we can have the flexibility of choosing different layouts for different pages, just create a new one in frontend/pages/ 🙌
     - We had fun
     - Multiple pizzas eaten
@@ -65,7 +65,7 @@ A local development headless installation of sitecore plus NuxtJS frontend exper
 > If frontend only is needed, then execute `npm run dev` to make sure that FE application is fully working in disconnected mode.
 
 ## Usage instructions
-Open Sitecore, find `ttt-shine` site and open `Home` in EE you should get usual content editing experience, but EE rendering was done on separate ee renderer server.
+Open Sitecore, find `ttt-shine` site and open `Home` in EE you should get usual content editing experience, but EE rendering was done on a separate ee renderer server.
 You could override ee renderer for the different one by adding `?sc_httprenderengineurl=https://feature-branch-name-ee.ttt.localhost`, it is handy when newer FE branch is deployed somewhere in the K8s and you want to test it against this new version of the FE site and EE renderer.
 
 Open `http://fe.ttt.localhost` - one docker container is used by both Experience Editor and FE in SSR and SPA mode.
