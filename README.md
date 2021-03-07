@@ -34,6 +34,7 @@ A local development headless installation of sitecore plus NuxtJS frontend exper
   - What problem was solved (if any)
     - NuxtJS support for Sitecore solutions
     - Improved development flow for the backend and frontend teams by removing necessity of integrated mode.
+    - Use NUXT possibility to render the same page with GET (end-user) and POST (Experience Editor) requests. With this approach, we can have the flexibility of choosing different layouts for different pages, just create a new one in frontend/pages/ 🙌
     - We had fun
     - Multiple pizzas eaten
   - Solution diagram ![Diagram](docs/images/diagram-solution.jpg "Solution Diagram")
