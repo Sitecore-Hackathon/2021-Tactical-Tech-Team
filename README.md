@@ -34,6 +34,7 @@ A local development headless installation of sitecore plus NuxtJS frontend exper
   - What problem was solved (if any)
     - NuxtJS support for Sitecore solutions
     - Improved development flow for the backend and frontend teams by removing necessity of integrated mode.
+  - Solution diagram ![Diagram](docs/images/diagram-solution.jpg "Solution Diagram")
   - Experience Editor ![EE](docs/images/ee.png "EE")
   - Front end ![FE](docs/images/fe.png "FE")
   - Front end disconnected mode ![FE Disconnected Mode](docs/images/fe-disconnected-mode.png "FE Disconnected Mode")
