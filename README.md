@@ -34,6 +34,8 @@ A local development headless installation of sitecore plus NuxtJS frontend exper
   - What problem was solved (if any)
     - NuxtJS support for Sitecore solutions
     - Improved development flow for the backend and frontend teams by removing necessity of integrated mode.
+    - We had fun
+    - Multiple pizzas eaten
   - Solution diagram ![Diagram](docs/images/diagram-solution.jpg "Solution Diagram")
   - Experience Editor ![EE](docs/images/ee.png "EE")
   - Front end ![FE](docs/images/fe.png "FE")
@@ -56,7 +58,7 @@ A local development headless installation of sitecore plus NuxtJS frontend exper
 - `Environment Website` project -> right click -> Publish
 - check that folder `.\docker\deploy\platform\` is populated
 - Start docker environment using `.\Start-Hackathon.ps1`
-- after sitecore site has started, sync Unicorn via `https://cm.ttt.localhost/unicorn.aspx`
+- after sitecore site has started, sync Unicorn via `https://cm.ttt.localhost/unicorn.aspx`, sitecore credentials usr:admin pwd:b
 - Once Sync is done, please do full publish
 
 ### Configuration
