@@ -48,15 +48,15 @@ A local development headless installation of sitecore plus NuxtJS frontend exper
 - Docker
 
 ## Installation instructions
-> `cd .\frontend`  
-> `npm install`
+- `cd .\frontend`  
+- `npm install`
  
-> Visual Studio -> Build Solution
-> `Environment Website` project -> right click -> Publish
-> check that folder `.\docker\deploy\platform\` is populated
-> Start docker environment using `.\Start-Hackathon.ps1`
-> after sitecore site has started, sync Unicorn via `https://cm.ttt.localhost/unicorn.aspx`
-> Once Sync is done, please do full publish
+- Visual Studio -> Build Solution
+- `Environment Website` project -> right click -> Publish
+- check that folder `.\docker\deploy\platform\` is populated
+- Start docker environment using `.\Start-Hackathon.ps1`
+- after sitecore site has started, sync Unicorn via `https://cm.ttt.localhost/unicorn.aspx`
+- Once Sync is done, please do full publish
 
 ### Configuration
 > If you want to run solution in the disconnected mode, please change `isDisconnected` to `true` in `.\frontend\env.js` file.
